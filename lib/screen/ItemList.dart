@@ -30,27 +30,15 @@ class ItemList extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(8.0),
           child: Row(
-            //crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               ClipRRect(
             borderRadius: BorderRadius.circular(20),
             child: Image.asset(
               item.imageUrl,
-                height:  media.width > 600? MediaQuery.of(context).size.height /5 : 120,
-                width:  media.width > 600? MediaQuery.of(context).size.width / 10 : 120,
+                height: MediaQuery.of(context).size.height /5,
+                width:   MediaQuery.of(context).size.width / 10,
                 fit: BoxFit.cover),
           ),
-            //  Container(
-            //    decoration: BoxDecoration(
-            //      borderRadius: BorderRadius.all(Radius.circular(30)),
-            //    ),
-            //    child: Image.asset(
-            //     item.imageUrl,
-            //     height: 120.0,
-            //     width: 120.0,
-            //     fit: BoxFit.cover,
-            //   ),
-            //  ),
               Flexible(
                 //padding: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
                 child: Padding(

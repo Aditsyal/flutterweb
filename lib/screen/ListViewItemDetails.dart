@@ -43,26 +43,25 @@ class ListItemDetails extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.center,
-                      child: RaisedButton(
-      elevation: 0,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-      onPressed: () {
-      },
-      textColor: Colors.black,
-      color: Colors.transparent,
-      padding: EdgeInsets.all(0.0),
-      child: Container(
-        alignment: Alignment.center,
-        height: MediaQuery.of(context).size.height / 15,
-        width: MediaQuery.of(context).size.width / 4,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(20.0)),
-            color: Colors.white,
-        ),
-        padding: const EdgeInsets.all(10.0),
-        child: Text('Watch Movies', textAlign: TextAlign.center, style: TextStyle(fontSize: media.width > 600? 20: 12),),
-      ),
-    ),
+            child: RaisedButton(
+              elevation: 0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+              onPressed: () {},
+              textColor: Colors.black,
+              color: Colors.transparent,
+              padding: EdgeInsets.all(0.0),
+              child: Container(
+                alignment: Alignment.center,
+                height: MediaQuery.of(context).size.height / 15,
+                width: MediaQuery.of(context).size.width / 4,
+                decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                color: Colors.white,
+                ),
+                padding: const EdgeInsets.all(10.0),
+                child: Text('Watch Movies', textAlign: TextAlign.center, style: TextStyle(fontSize: media.width > 600? 20: 12),),
+              ),
+            ),
           ),
           Container(
             alignment: Alignment.centerLeft,
